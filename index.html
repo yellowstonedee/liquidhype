@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TI7 HYPE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+       
+
+        function liquid(){
+        	var audio = document.getElementById("audio");
+       		audio.play();
+       		var text = document.querySelector("h1");
+       		text.classList.add("show");
+       		var background = document.querySelector("body");
+       		background.classList.add("flash");
+        }
+
+        function remove(){
+        	var text = document.querySelector("h1");
+        	text.classList.remove("show");
+        	var background = document.querySelector("body");
+        	background.classList.remove("flash");
+
+        }
+	</script>
+
+</head>
+<body>
+<div>
+
+<input type="button" class="btn-big-red" onclick="liquid()">
+<audio id="audio" src="liquidaredoingit.mp3" onended="remove()"></audio>
+
+<h1>LIQUID ARE DOING IT!!!!!!</h1>
+
+</div>
+</body>
+</html>

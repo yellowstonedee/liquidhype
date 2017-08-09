@@ -1,0 +1,86 @@
+body{
+	height: 100%;
+	width: 100%;
+}
+
+div{
+	width: 50%;
+	margin: 0 auto;
+}
+
+input{
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	height: 150px;
+	width: 150px;
+	background: red;
+	box-shadow:inset 0px -8px 0px 0px rgba(175,0,0,0.5);
+	margin: 100px auto 0;
+	display: block;
+}
+
+input:active{
+	background: red;
+	box-shadow:inset 0px 8px 0px 0px rgba(175,0,0,0.3);
+}
+
+
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 6em;
+	visibility: hidden;
+}
+
+.show{
+	visibility: visible;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0.00, red), 
+        color-stop(16%, orange),
+        color-stop(32%, yellow),
+        color-stop(48%, green),
+        color-stop(60%, blue),
+        color-stop(76%, indigo),
+        color-stop(1.00, violet));
+    animation: shake 0.75s /*cubic-bezier(.36,.07,.19,.97) both*/;
+  	transform: translate3d(0, 0, 0);
+  	animation-iteration-count: infinite;
+  	backface-visibility: hidden;
+  	perspective: 1000px;
+}
+@keyframes shake {
+	0% { transform: translate(8px, 2px) rotate(0deg); }
+	10% { transform: translate(-10px, -12px) rotate(-15deg); }
+	20% { transform: translate(-23px, 10px) rotate(10deg); }
+	30% { transform: translate(10px, 12px) rotate(0deg); }
+	40% { transform: translate(10px, -12px) rotate(17deg); }
+	50% { transform: translate(-10px, 20px) rotate(-16deg); }
+	60% { transform: translate(-13px, 13px) rotate(20deg); }
+	70% { transform: translate(12px, 10px) rotate(-21deg); }
+	80% { transform: translate(-11px, -11px) rotate(10deg); }
+	90% { transform: translate(22px, 21px) rotate(20deg); }
+	100% { transform: translate(12px, -22px) rotate(-10deg); }
+}
+
+
+
+
+
+
+.flash{
+	animation: colorchange 0.8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorchange{
+	  0%   {background: black;}
+      25%  {background: white;}
+      50%  {background: black;}
+      75%  {background: white;}
+      100% {background: black;}
+
+
+}
